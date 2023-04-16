@@ -4,7 +4,7 @@ def read_input():
         pattern = input().rstrip()
         text = input().rstrip()
     elif "F" in fileorno or "f" in fileorno:
-        file = input()
+        file = "06"
         if "a" not in file:
             with open("tests/" + file, 'r')as f:
                 pattern = f.readline().rstrip()
