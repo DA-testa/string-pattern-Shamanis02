@@ -15,7 +15,7 @@ def print_occurrences(output):
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
-    prime = 101
+    prime = 1
     p_len, t_len = len(pattern), len(text)
     pattern_hash = sum(ord(pattern[i]) * pow(prime, i) for i in range(p_len))
     text_hash = sum(ord(text[i]) * pow(prime, i) for i in range(p_len))
