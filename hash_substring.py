@@ -7,8 +7,8 @@ def read_input():
         file = input()
         if "a" not in file:
             with open("tests/" + file, 'r')as f:
-                pattern = file.readline().rstrip()
-                text = file.readline().rstrip()
+                pattern = f.readline().rstrip()
+                text = f.readline().rstrip()
     return pattern, text
 
 def print_occurrences(output):
